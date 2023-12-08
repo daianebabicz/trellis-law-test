@@ -1,4 +1,3 @@
-# num_to_english/urls.py
 from django.urls import path
 from .views import default_view, num_to_english
 

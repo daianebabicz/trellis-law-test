@@ -1,4 +1,3 @@
-# num_to_english/views.py
 from django.shortcuts import render
 
 def default_view(request):
