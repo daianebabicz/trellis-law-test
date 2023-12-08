@@ -1,0 +1,38 @@
+<!-- num_to_english/templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Num to English API</title>
+</head>
+<body>
+    <h1>Welcome to Num to English API by Daiane Babicz for Trellis Law ⚡</h1>
+    <p>This Django application provides an API endpoint to convert numbers into their English word representations.</p>
+
+    <h2>API Endpoints</h2>
+
+    <h3>1. Convert Number to English (GET)</h3>
+    <p>Use the following endpoint to convert a number to its English word representation using a GET request.</p>
+    <ul>
+        <li>Endpoint: <code>/api/num_to_english</code></li>
+        <li>Method: <code>GET</code></li>
+        <li>Parameters: <code>number</code> - The numeric value to be converted (e.g., <code>/api/num_to_english?number=12345678</code>)</li>
+    </ul>
+
+    <h4>Example</h4>
+    <code>http://127.0.0.1:8000/api/num_to_english?number=12345678</code>
+
+    <h3>2. Convert Number to English (POST)</h3>
+    <p>Use the following endpoint to convert a number to its English word representation using a POST request.</p>
+    <ul>
+        <li>Endpoint: <code>/api/num_to_english</code></li>
+        <li>Method: <code>POST</code></li>
+        <li>Body: JSON object with a number key (e.g., <code>{"number": "12345678"}</code>)</li>
+    </ul>
+
+    <h4>Example</h4>
+    <code>curl -X POST -H "Content-Type: application/json" -d '{"number": "12345678"}' http://127.0.0.1:8000/api/num_to_english</code>
+
+</body>
+</html>
